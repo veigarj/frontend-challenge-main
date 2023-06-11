@@ -2,6 +2,7 @@ import { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { SearchIcon } from './icon/search-icon';
 
+// styled components input
 export const PrimaryInput = styled.input`
   width: 352px;
   border-radius: 8px;
@@ -35,8 +36,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
 export function PrimaryInputWSearchIcon(props: InputProps) {
   return (
+    // container do input
     <InputContainer>
+      {/* input  */}
       <PrimaryInput {...props} />
+      {/* icon svg */}
       <SearchIcon />
     </InputContainer>
   );
